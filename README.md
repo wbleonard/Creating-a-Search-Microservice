@@ -75,7 +75,7 @@ exports = function({ query, headers, body}, response) {
 
 };
 
-
+```
 ## Step 3: Update the searchInspections Function's Authentication
 
 Edit the searchInspections function and set its Authentication to **System**
@@ -97,6 +97,8 @@ Copy the callback URL from the HTTPS Endpoints settings:
 ![Callback URL](images/callback_url.png)
 
 
-Paste the URL in your browser, appending ?searchTerm=&lt;term>. For example:
+Paste the URL in your browser, appending ?searchTerm=&lt;term>. For example, let's search for "health risk"
 
-https://data.mongodb-api.com/app/inspectionsearchservice-lxafd/endpoint/inspections/search?searchTerm=Thunder%20Mountain
+[https://data.mongodb-api.com/app/inspectionsearchservice-lxafd/endpoint/inspections/search?searchTerm=health%20risk](https://data.mongodb-api.com/app/inspectionsearchservice-lxafd/endpoint/inspections/search?searchTerm=expired%20food)
+
+![Result](images/result.png)
