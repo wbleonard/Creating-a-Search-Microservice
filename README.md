@@ -8,7 +8,7 @@ For this tutorial I'll leverage the [sample_training.inspections](https://www.mo
 ![architecture](images/architecture.png)
 ## Step 1: Create the Search Index
 
-[Create](https://www.mongodb.com/docs/atlas/atlas-search/create-index/) a default Search index on the sample_training.inspections collection.
+[Create](https://www.mongodb.com/docs/atlas/atlas-search/create-index/) a default Search index on the `sample_training.inspections` collection.
 
 ## Step 2: Create the HTTPS Endpoint
 
