@@ -12,9 +12,14 @@ For this tutorial I'll leverage the [sample_training.inspections](https://www.mo
 
 ## Step 2: Create the HTTPS Endpoint
 
-Note, the HTTPS Endpoint requires a backing function, which when created from the HTTPS Endpoint, provides example code on how to access the endpoint's arguments and payload.
+[HTTPS endpoints](https://www.mongodb.com/docs/realm/endpoints/) allow you to define custom API endpoints for your appliciations. You access them from the Atlas Realm UI:
 
-Set the Route to  /inspections/search
+![HTTPS Endpoint](images/https_endpoint.png)
+
+
+
+
+Set the Route to `/inspections/search`
 
 ![Add Endpoint](images/add_endpoint.png)
 
@@ -24,6 +29,8 @@ Set the HTTP Method to GET and Response With Result to ON.
 
 
 Create a New Function and set the Function Name to **searchInspections**: 
+
+> Note, the HTTPS Endpoint requires a backing function, which when created from the HTTPS Endpoint, provides example code on how to access the endpoint's arguments and payload. You are welcome to create the function first, but you will see different example code if you do.
 
 ![New Function](images/new_function.png)
 
@@ -91,7 +98,7 @@ And since the function will never be called externally, go ahead and set Private
 
 ## Step 4: Test
 
-Copy the callback URL from the HTTPS Endpoints settings:
+Copy the callback URL from the HTTPS Endpoints Settings:
 
 
 ![Callback URL](images/callback_url.png)
@@ -99,6 +106,6 @@ Copy the callback URL from the HTTPS Endpoints settings:
 
 Paste the URL in your browser, appending ?searchTerm=&lt;term>. For example, let's search for "health risk"
 
-[https://data.mongodb-api.com/app/inspectionsearchservice-lxafd/endpoint/inspections/search?searchTerm=health%20risk](https://data.mongodb-api.com/app/inspectionsearchservice-lxafd/endpoint/inspections/search?searchTerm=expired%20food)
+[https://data.mongodb-api.com/app/inspectionsearchservice-lxafd/endpoint/inspections/search?searchTerm=health%20risk](https://data.mongodb-api.com/app/inspectionsearchservice-lxafd/endpoint/inspections/search?searchTerm=health%20risk)
 
 ![Result](images/result.png)
